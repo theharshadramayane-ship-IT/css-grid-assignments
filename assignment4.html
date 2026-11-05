@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4: Dashboard Layout</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .nav { margin-bottom: 20px; }
+        .nav a { margin-right: 15px; text-decoration: none; color: blue; font-weight: bold; }
+        
+        .dashboard {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 80px 300px 60px;
+            gap: 10px;
+        }
+        .d-header { grid-area: header; background: #2c3e50; color: white; display: flex; justify-content: center; align-items: center;}
+        .d-nav { grid-area: nav; background: #16a085; color: white; display: flex; justify-content: center; align-items: center;}
+        .d-main { grid-area: main; background: #ecf0f1; display: flex; justify-content: center; align-items: center; border: 1px solid #ccc;}
+        .d-aside { grid-area: aside; background: #8e44ad; color: white; display: flex; justify-content: center; align-items: center;}
+        .d-footer { grid-area: footer; background: #34495e; color: white; display: flex; justify-content: center; align-items: center;}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="assignment1.html">Assignment 1</a>
+        <a href="assignment2.html">Assignment 2</a>
+        <a href="assignment3.html">Assignment 3</a>
+        <a href="assignment4.html">Assignment 4</a>
+        <a href="assignment5.html">Assignment 5</a>
+        <a href="assignment6.html">Assignment 6</a>
+    </div>
+    <h2>Assignment 4: Dashboard Layout</h2>
+    <p>Create a dashboard using grid-template-areas with the following sections: header, navigation, main, aside, and footer.</p>
+
+    <div class="dashboard">
+        <div class="d-header">Header</div>
+        <div class="d-nav">Navigation</div>
+        <div class="d-main">Main Content</div>
+        <div class="d-aside">Aside</div>
+        <div class="d-footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6: Masonry Grid</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .nav { margin-bottom: 20px; }
+        .nav a { margin-right: 15px; text-decoration: none; color: blue; font-weight: bold; }
+        
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 150px;
+            gap: 10px;
+        }
+        .masonry-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .tall { grid-row: span 2; }
+        .wide { grid-column: span 2; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="assignment1.html">Assignment 1</a>
+        <a href="assignment2.html">Assignment 2</a>
+        <a href="assignment3.html">Assignment 3</a>
+        <a href="assignment4.html">Assignment 4</a>
+        <a href="assignment5.html">Assignment 5</a>
+        <a href="assignment6.html">Assignment 6</a>
+    </div>
+    <h2>Assignment II: Fruit Masonry Grid</h2>
+    <p>Recreate the masonry grid layout using CSS Grid spanning techniques.</p>
+
+    <div class="masonry-grid">
+        <img src="https://images.unsplash.com/photo-1596363505729-4190a9506133?w=400&q=80" alt="Fruit" class="tall">
+        <img src="https://images.unsplash.com/photo-1587393855524-087f83d95bc9?w=400&q=80" alt="Fruit">
+        <img src="https://images.unsplash.com/photo-1589984662646-e7b2e4962f18?w=400&q=80" alt="Fruit">
+        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?w=400&q=80" alt="Fruit" class="wide">
+        <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=400&q=80" alt="Fruit">
+        <img src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=400&q=80" alt="Fruit" class="tall">
+        <img src="https://images.unsplash.com/photo-1571575173700-afb9492e6a50?w=400&q=80" alt="Fruit">
+    </div>
+</body>
+</html>

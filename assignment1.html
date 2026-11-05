@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1: Basic Grid</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .nav { margin-bottom: 20px; }
+        .nav a { margin-right: 15px; text-decoration: none; color: blue; font-weight: bold; }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+        }
+        .grid-item {
+            background-color: #ff6b6b;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="assignment1.html">Assignment 1</a>
+        <a href="assignment2.html">Assignment 2</a>
+        <a href="assignment3.html">Assignment 3</a>
+        <a href="assignment4.html">Assignment 4</a>
+        <a href="assignment5.html">Assignment 5</a>
+        <a href="assignment6.html">Assignment 6</a>
+    </div>
+    <h2>Assignment 1: Basic Grid Layout (3x3)</h2>
+    <p>Create a 3x3 grid layout where each cell is 100px by 100px with a 10px gap. Fill it with 9 colored boxes.</p>
+    
+    <div class="grid-container">
+        <div class="grid-item">1</div><div class="grid-item">2</div><div class="grid-item">3</div>
+        <div class="grid-item">4</div><div class="grid-item">5</div><div class="grid-item">6</div>
+        <div class="grid-item">7</div><div class="grid-item">8</div><div class="grid-item">9</div>
+    </div>
+</body>
+</html>
